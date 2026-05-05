@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFlow Academy - Modern UI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">TechFlow Academy</div>
+  <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+  <nav class="nav" id="nav">
+    <a href="#hero">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#instructors">Instructors</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <h1>Learn Coding the Smart Way</h1>
+  <p>Structured courses, real projects, and modern learning system for future developers.</p>
+  <button onclick="document.getElementById('courses').scrollIntoView({behavior:'smooth'})">Get Started</button>
+</section>
+
+<!-- COURSES -->
+<section id="courses" class="section">
+  <h2>Our Courses</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>HTML & CSS</h3>
+      <p>Build responsive websites with semantic HTML, CSS Grid, Flexbox, and modern styling.</p>
+    </div>
+    <div class="card">
+      <h3>JavaScript</h3>
+      <p>Learn logic, DOM manipulation, events, ES6+, and interactive web applications.</p>
+    </div>
+    <div class="card">
+      <h3>React JS</h3>
+      <p>Build modern single-page applications with components, hooks, and routing.</p>
+    </div>
+    <div class="card">
+      <h3>Node.js & Backend</h3>
+      <p>Understand backend development, Express, APIs, and database integration.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INSTRUCTORS -->
+<section id="instructors" class="section">
+  <h2>Meet Our Instructors</h2>
+  <div class="grid">
+    <div class="card instructor">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor Jane">
+      <h3>Jane Smith</h3>
+      <p>Frontend specialist with 8 years of professional experience.</p>
+    </div>
+    <div class="card instructor">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Instructor John">
+      <h3>John Doe</h3>
+      <p>JavaScript & backend expert with real-world project experience.</p>
+    </div>
+    <div class="card instructor">
+      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Instructor Emily">
+      <h3>Emily Johnson</h3>
+      <p>Full-stack developer focused on building job-ready learners.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section testimonials">
+  <h2>What Our Students Say</h2>
+  <div class="grid">
+    <div class="card student">
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Student Michael">
+      <p>"TechFlow Academy helped me land my first developer job!"</p>
+      <h4>- Michael R.</h4>
+    </div>
+    <div class="card student">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Student Sarah">
+      <p>"The instructors are amazing and the projects are practical."</p>
+      <h4>- Sarah K.</h4>
+    </div>
+    <div class="card student">
+      <img src="https://randomuser.me/api/portraits/men/88.jpg" alt="Student David">
+      <p>"I finally understood how to build responsive websites from scratch."</p>
+      <h4>- David P.</h4>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h3>TechFlow Academy</h3>
+      <p>© 2026 All Rights Reserved</p>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <a href="#hero">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#instructors">Instructors</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Hamburger menu toggle
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('nav');
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
