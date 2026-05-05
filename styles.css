@@ -1,0 +1,256 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #111827;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4d00;
+}
+
+.nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #ff6d1a;
+  text-decoration: underline;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Show nav vertically on mobile */
+.nav.active {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px 80px 20px; /* add more spacing from nav */
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  color: #cbd5e1;
+}
+
+.hero button {
+  margin-top: 25px;
+  padding: 15px 30px;
+  border: none;
+  background: #ff4d00;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.hero button:hover {
+  background: #ff6d1a;
+  transform: scale(1.05);
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 40px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  color: #ff4d00;
+  margin-bottom: 10px;
+}
+
+/* INSTRUCTOR / STUDENT IMAGES */
+.instructor img, .student img {
+  max-width: 100%;
+  height:auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #ff4d00;
+}
+
+.instructor, .student {
+  text-align: center;
+}
+
+/* CONTACT FORM */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 15px;
+}
+
+.contact input, 
+.contact textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+.contact button {
+  padding: 12px;
+  border: none;
+  background: #ff4d00;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background: #ff6d1a;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+  background: #111827;
+  padding: 40px 20px;
+  color: #94a3b8;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.footer-grid h3, .footer-grid h4 {
+  color: #ff4d00;
+  margin-bottom: 10px;
+}
+
+.footer-grid a {
+  color: #94a3b8;
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.footer-grid a:hover {
+  color: #ff6d1a;
+  text-decoration: underline;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    width: 100%;
+  }
+
+  .nav a {
+    margin-left: 0;
+  }
+}
+
+@media(max-width: 480px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
