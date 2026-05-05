@@ -85,17 +85,18 @@ TechFlow-Website-Fix/
 ### Desktop View
 | Before | After |
 |--------|-------|
-| ![Before](screenshots/before-desktop.png) | ![After](screenshots/after-desktop.png) |
+| ![Before](screenshoots/before-desktop.png) | ![After](screenshoots/after-desktop.png) |
+| 
 
 ### Tablet View
 | Before | After |
 |--------|-------|
-| ![Before](screenshots/before-tablet.png) | ![After](screenshots/after-tablet.png) |
+| ![Before](screenshoots/before-tablet.png) | ![After](screenshoots/after-tablet.png) |
 
 ### Mobile View
 | Before | After |
 |--------|-------|
-| ![Before](screenshots/before-mobile.png) | ![After](screenshots/after-mobile.png) | 
+| ![Before](screenshoots/before-mobile.png) | ![After](screenshoots/after-mobile.png) | 
 
 ---
 
